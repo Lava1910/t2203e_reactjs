@@ -1,3 +1,11 @@
 -components
 -property
 -state
+
+chu trình components:
+- Initialization: setup props and state
+- Mounting: componentWillMount -> render -> componentDidMount
+- Updation
+    + props: componentWillReceiveProps -> shouldComponentUpdate(true,false) -> componentWillUpdate -> render -> componentDidUpdate
+    + states: shouldComponentUpdate(true,false) -> componentWillUpdate -> render -> componentDidUpdate
+- Unmounting: componentWillUnmount

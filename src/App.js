@@ -35,6 +35,12 @@ class App extends React.Component {
       className : v
     })
   }
+  componentDidMount(){
+    console.log("did mount");
+  }
+  componentDidUpdate(){
+    console.log("did update");
+  }
   handleInput(event){
     const input = event.target;
     const new_student = this.state.new_student;
@@ -53,6 +59,7 @@ class App extends React.Component {
     this.setState({student:students});
   }
   render() {
+    console.log("render...");
     const student = this.state.student;
     const className = this.state.className;
     const new_student = this.state.new_student;
